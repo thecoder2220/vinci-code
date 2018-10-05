@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+}
+
+.ais-InstantSearch__root {
+  font-family: VinciSansBold,"Trebuchet MS",Arial,Helvetica,sans-serif !important;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+em {
+  background: #bccef7;
+  font-style: normal;
+}
+
+.result {
+  padding: 20px;
+  font-size: .95em;
+  margin-top: 35px;
+
+  &__title {
+    font-weight: bolder;
+  }
+
+  &__content {
+    margin: 20px 0 0px 0;
+  }
+
+  &__url {
+    font-weight: lighter;
+    margin-top: 10px;
+    color: #1f4f92;
+  }
+
+  &:hover {
+    background-color: #ffe4c491;
+    cursor: pointer;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tagList {
+  .ais-Menu__item.ais-Menu__itemSelected {
+    background-color: #e92436;
+    font-weight: normal;
+  }
+  .ais-Menu__item + .ais-Menu__item {
+    margin-left: 10px;
+    text-transform: capitalize;
+    
+  }
+  .ais-Menu__itemCount {
+    display: none;
+  }
+  .ais-Menu__root {
+    max-width: inherit;
+    width: 100%;
+  }
+
+  .ais-Menu__item {
+    display: inline-block;
+    width: auto;
+    background-color: #1f4f92;
+    padding: 5px 20px;
+    border-radius: 8px;
+  }
+
+  .ais-Menu__items {
+    text-align: center;
+    // margin: 0 0 50px 0px;
+    line-height: 46px;
+  }
+  .ais-Menu__itemLabel {
+    color: white;
+  }
+}
+
+.results {
+  display: flex;
+}
+
+.refinements {
+  width: 200px;
+  margin-right: 50px;
+}
+
+.items {
+  max-width: 830px;
+}
+
+.header-search {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1090px;
+}
+
+.ais-Panel__root {
+  clear: both;
+}
+
+.ais-Panel__root:first-child h5 {
+  margin-top: 0;
+}
+
+.ais-Panel__root + .ais-Panel__root {
+  padding-top: 10px;
+}
+
+h5 {
+  font-size: 16px;
+  color: #1f4f92;
+  margin-bottom: 15px;
+}
+
+.ais-Menu__item {
+  font-size: 16px;
+}
+
+.ais-Menu__itemLabel, .ais-RefinementList__item {
+  color: #333;
+}
+
+.ais-Menu__itemCount, .ais-RefinementList__itemCount {
+  background-color: rgba(136, 136, 136, 0.1);
+  color: #55606e;
+}
+
+.ais-Hits__root {
+  clear: both;
+}
+
+.pdf-section .ais-Hits__root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  padding: 50px 0 0 0px;
+
+  &:empty {
+    padding: 0;
+  }
+}
+
+.pdf-hit {
+  padding: 20px;
+  background-color: rgba(31, 79, 146, 0.09);
+
+  &:hover {
+    background-color: rgba(31, 79, 146, 0.23);
+    cursor: pointer;
+  }
+}
+
+.pdf-hit__content {
+  padding: 10px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.pdf-hit__title {
+  width: 365px;
+  font-size: .9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.logo {
+  background-image: url('https://www.vinci.com/vinci.nsf/en/images/$file/logo-vinci.png');
+  width: 250px;
+  height: 70px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.separator {
+  height: 2px;
+  width: 100%;
+  background-color: #1f4f92;
+  margin-bottom: 50px;
+}
+
+.ais-SearchBox__root {
+  max-width: 835px;
+}
+
+.stats-wrapper {
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+em, .ais-Highlight .ais-Highlight__highlighted {
+  background: none!important;
+  color: #e92436;
+  font-weight: bold;
+}
+
+.icon {
+  margin-bottom: 5px;
+}
+
+.ais-Pagination__root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
